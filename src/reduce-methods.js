@@ -25,6 +25,10 @@ export const addValues = arr => arr.reduce((a, b) => a + b, 0);
 
 export const addPurchases = arr => arr.reduce((a, b) => a + b.purchasePrice, 0);
 
+export const countNumberOfElements = arr => arr.reduce((a, b) => {
+  if (b) a++;
+  return a;
+}, 0);
 
 
 

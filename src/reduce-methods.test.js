@@ -1,4 +1,4 @@
-import { toLastNames, addValues, addPurchases } from './reduce-methods.js';
+import { toLastNames, addValues, addPurchases, countNumberOfElements } from './reduce-methods.js';
 
 test('toLastNames', () => {
   expect(toLastNames([{ firstName:'Jane', lastName:'Doe' }, { firstName:'James', lastName:'Bond' }])).toStrictEqual(['Jane Doe', 'James Bond']);
@@ -33,4 +33,8 @@ const purchases = [
 
 test('addPurchases', () => {
   expect(addPurchases(purchases)).toStrictEqual(118551);
+});
+
+test('countNumberOfElements', () => {
+  expect(countNumberOfElements(purchases)).toStrictEqual(4);
 });
