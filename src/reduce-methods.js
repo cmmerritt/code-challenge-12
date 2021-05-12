@@ -30,6 +30,10 @@ export const countNumberOfElements = arr => arr.reduce((a, b) => {
   return a;
 }, 0);
 
+export const returnNames = arr => arr.reduce((a, b) => {
+
+}, 0);
+
 
 
 
